@@ -1,4 +1,5 @@
-import math
-p,r,t=map(int,input().split())
-a=p*math.pow((1+(r/100)),t)
-print(format(a,".2f"))
+p,t,r=map(int,input().split())
+d=(1+(t/100))
+e=pow(d,r)
+f=p*e
+print("%.2f"%f)
