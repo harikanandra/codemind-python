@@ -1,10 +1,8 @@
-n=int(input())
-c=1
-for i in range(1,n):
-    if i*i==n:
-        print(True)
-        c+=1
-        break
-
-if i>c and i*i!=n:
-    print(False)
+num =int(input())  
+sqrt_num = num // 2  
+while sqrt_num * sqrt_num > num:  
+    sqrt_num = (sqrt_num + num // sqrt_num) // 2  
+if sqrt_num * sqrt_num == num:  
+    print("True")  
+else:  
+    print("False")  
